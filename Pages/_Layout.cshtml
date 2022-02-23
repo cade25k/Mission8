@@ -24,29 +24,27 @@
                         <li class="nav-item">
                             <!--<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>-->
                         </li>
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
     <div class="row m-1 p-1">
-        <div id="types" class="col-3">
-            <vc:categories></vc:categories>
-        </div>
-        <div class="container bg-white align-content-center col-9">
+        <div class="container bg-white align-content-center">
             <main role="main" class="pb-3 align-content-center">
                 @RenderBody()
             </main>
         </div>
     </div>
-        <footer class="border-top footer text-muted bg-info text-light">
-            <div class="container">
-                &copy; 2022 - Mission 8
-            </div>
-        </footer>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        @RenderSection("Scripts", required: false)
-    </body>
-    </html>
+    <footer class="border-top footer text-muted bg-info text-light">
+        <div class="container">
+            &copy; 2022 - Mission 8
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
